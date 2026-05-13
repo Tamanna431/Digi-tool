@@ -3,28 +3,50 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Navbar from './components/Navbar';
 import Banner from './components/Banner';
-import Products from './components/Products';
 import ToggleSection from './components/ToggleSection';
+import Products from './components/Products';
+import Cart from './components/Cart';
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
+  const [activeTab, setActiveTab] = useState('products');
+
+  const addToCart = (product) => {
+    setCartItems([...cartItems, product]);
+  };
+
+  const removeFromCart = (productId) => {
+    setCartItems(cartItems.filter(item => item.id !== productId));
+  };
+
+  const clearCart = () => {
+    setCartItems([]);
+  };
 
   return (
     <div className="App">
-      <ToastContainer position="top-right" autoClose={3000} />
+      <ToastContainer position="top-right" autoClose={2000} />
       <Navbar cartItems={cartItems} />
-      <Banner/>
-       <ToggleSection 
-        //activeTab={activeTab} 
-        //setActiveTab={setActiveTab}
-        //cartCount={cartItems.length}
+      <Banner />
+      
+      {/* Toggle Section with Header */}
+      <ToggleSection 
+        activeTab={activeTab} 
+        setActiveTab={setActiveTab}
+        cartCount={cartItems.length}
       />
-      <Products/>
-     
-      <div className="min-h-screen bg-gray-50">
-        <h1 className="text-3xl font-bold text-center mt-10 text-gray-800">
-          DigiTools - Coming Soon
-        </h1>
+      
+      {/* Main Content */}
+      <div className="bg-gray-50 min-h-screen pb-20">
+        {activeTab === 'products' ? (
+          <Products addToCart={addToCart} />
+        ) : (
+          <Cart 
+            cartItems={cartItems} 
+            removeFromCart={removeFromCart}
+            clearCart={clearCart}
+          />
+        )}
       </div>
     </div>
   );

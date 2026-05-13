@@ -76,7 +76,7 @@ const Products = ({ addToCart }) => {
             {/* Buy Now Button */}
             <button
               onClick={() => handleAddToCart(product)}
-              className="w-full bg-purple-600 text-white py-3 rounded-full font-medium hover:bg-purple-700 transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5"
+              className="w-full bg-linear-to-l from-purple-800 to-purple-600 text-white py-3 rounded-full font-medium hover:bg-purple-700 transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5"
             >
               Buy Now
             </button>
