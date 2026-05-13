@@ -6,6 +6,7 @@ import Banner from './components/Banner';
 import ToggleSection from './components/ToggleSection';
 import Products from './components/Products';
 import Cart from './components/Cart';
+import Steps from './components/Steps';
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
@@ -48,6 +49,7 @@ function App() {
           />
         )}
       </div>
+      <Steps/>
     </div>
   );
 }
