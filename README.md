@@ -1,16 +1,34 @@
-# React + Vite
+# 🛒 DigiTools - Premium Digital Tools Marketplace
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![DigiTools Banner](https://img.shields.io/badge/DigiTools-Premium%20Digital%20Tools-purple?style=for-the-badge&logo=react)
 
-Currently, two official plugins are available:
+## 📝 Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+DigiTools is a modern, responsive e-commerce platform designed for buying premium digital tools and resources. Built with React.js and Tailwind CSS, it offers a seamless shopping experience where users can browse digital products, manage their cart, and complete purchases with ease. The platform features a clean, professional design with intuitive navigation and real-time cart management.
 
-## React Compiler
+## 🛠️ Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React.js** - Frontend library for building user interface
+- **Tailwind CSS** - Utility-first CSS framework
+- **DaisyUI** - Tailwind CSS component library
+- **React-Toastify** - For showing notifications and alerts
+- **React Icons** - For beautiful icon integration
+- **JavaScript (ES6+)** - Programming language
+- **JSON** - For product data management
+- **Vite** - Build tool and development server
+- **Git & GitHub** - Version control
 
-## Expanding the ESLint configuration
+## ✨ Key Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🛍️ Dynamic Product Showcase
+Browse through 6+ premium digital products displayed in a beautiful 3-column grid layout. Each product card includes detailed information like price, features, tags (Popular, New, Best Seller), and instant "Buy Now" functionality with toast notifications.
+
+### 🛒 Smart Cart Management
+Interactive cart system with real-time updates. Add products, remove individual items, view total count in the navbar, and checkout with a single click. The cart automatically calculates totals and clears all items upon successful checkout.
+
+### 🔄 Interactive Toggle System
+Seamlessly switch between Products and Cart views with animated toggle buttons. The default view shows products, while the cart view displays selected items with a clean, single-column layout for easy management.
+
+🚀 Live Demo
+link:https://digi-tool-git-main-tamannashuchi06-2899s-projects.vercel.app/
+Github Repository Link:https://github.com/Tamanna431/Digi-tool
