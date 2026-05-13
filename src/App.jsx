@@ -8,6 +8,7 @@ import Products from './components/Products';
 import Cart from './components/Cart';
 import Steps from './components/Steps';
 import Pricing from './components/Pricing';
+import Footer from './components/Footer';
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
@@ -52,6 +53,7 @@ function App() {
       </div>
       <Steps/>
       <Pricing/>
+      <Footer/>
     </div>
   );
 }

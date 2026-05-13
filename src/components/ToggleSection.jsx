@@ -32,7 +32,7 @@ const ToggleSection = ({ activeTab, setActiveTab, cartCount }) => {
             onClick={() => setActiveTab('cart')}
             className={`px-8 py-3 rounded-full font-medium transition-all duration-300 relative ${
               activeTab === 'cart'
-                ? 'bg-purple-600 text-white shadow-lg shadow-purple-200'
+                ? 'bg-linear-to-l from-purple-800 to-purple-600 text-white shadow-lg shadow-purple-200'
                 : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
             }`}
           >
