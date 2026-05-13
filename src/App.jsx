@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Navbar from './components/Navbar';
+import Banner from './components/Banner';
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
@@ -10,6 +11,7 @@ function App() {
     <div className="App">
       <ToastContainer position="top-right" autoClose={3000} />
       <Navbar cartItems={cartItems} />
+      <Banner/>
       
       {/* বাকি সেকশনগুলো পরে যোগ করব */}
       <div className="min-h-screen bg-gray-50">

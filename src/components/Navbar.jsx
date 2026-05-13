@@ -39,7 +39,7 @@ const Navbar = ({ cartItems }) => {
             <button className="text-gray-700 hover:text-purple-600 transition font-medium">
               Login
             </button>
-            <button className="bg-purple-600 text-white px-5 py-2 rounded-full hover:bg-purple-700 transition font-medium">
+            <button className="bg-linear-to-l from-purple-800 to-purple-600 text-white px-5 py-2 rounded-full hover:bg-purple-700 transition font-medium">
               Get Started
             </button>
           </div>
@@ -80,7 +80,7 @@ const Navbar = ({ cartItems }) => {
                   )}
                 </div>
                 <button className="text-gray-700 font-medium">Login</button>
-                <button className=" text-white px-5 py-2 rounded-full font-medium">
+                <button className="bg-linear-to-l from-purple-800 to-purple-600 text-white px-5 py-2 rounded-full font-medium">
                   Get Started
                 </button>
               </div>
