@@ -7,6 +7,7 @@ import ToggleSection from './components/ToggleSection';
 import Products from './components/Products';
 import Cart from './components/Cart';
 import Steps from './components/Steps';
+import Pricing from './components/Pricing';
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
@@ -50,6 +51,7 @@ function App() {
         )}
       </div>
       <Steps/>
+      <Pricing/>
     </div>
   );
 }

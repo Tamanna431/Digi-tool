@@ -15,7 +15,7 @@ const Banner = () => {
 
           {/* Heading */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-            Supercharge Your <br /> Digital Workflow
+            Supercharge Your <br /> <span className=' bg-linear-to-r from-purple-800 to-purple-600 bg-clip-text text-transparent'>Digital Workflow</span>
           </h1>
 
           {/* Description */}
@@ -31,7 +31,7 @@ const Banner = () => {
             >
               Explore Products
             </a>
-            <button className="bg-white text-purple-600 border-2 border-purple-200 px-8 py-3 rounded-full font-medium hover:border-purple-600 hover:text-purple-700 transition flex items-center gap-2">
+            <button className="bg-white text-purple-600 border-2 border-purple-200 hover:bg-purple-600 px-8 py-3 rounded-full font-medium hover:border-purple-600 hover:text-purple-700 transition flex items-center gap-2">
               <span><img src="./Play.png" alt="icon" /></span> Watch Demo
             </button>
           </div>
